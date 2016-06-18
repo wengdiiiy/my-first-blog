@@ -20,7 +20,7 @@ class Post(models.Model):
         self.save()
 
     def approved_comments(self):
-        return self.comments.filter(approved_comment=True)
+        return self.comments.filter()
 
 
 class Comment(models.Model):
